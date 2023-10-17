@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="@string/app_name"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="closeInput"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/box"
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:background="@drawable/config_panel_background"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:onClick="closeInput"
+            android:orientation="vertical"
+            android:paddingTop="40dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_config"
+                android:textColor="#30C3B1"
+                android:textSize="25sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/serverInput"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_background"
+                android:hint="@string/text_server_address"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="#30C3B1">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/serverPass"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_background"
+                android:hint="@string/text_server_token"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="#30C3B1">
+
+            </EditText>
+
+            <android.widget.Button
+                android:id="@+id/startBth"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_background"
+                android:clickable="true"
+                android:onClick="start"
+                android:text="@string/text_save"
+                android:textColor="#FFFFFF">
+
+            </android.widget.Button>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

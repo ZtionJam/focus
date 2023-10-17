@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">焦距</string>
+    <string name="text_server_address">服务器地址</string>
+    <string name="text_save">保存</string>
+    <string name="text_config">配置</string>
+    <string name="text_please_input_server_address">请输入服务器地址</string>
+    <string name="text_start">启动</string>
+    <string name="text_stop">停止</string>
+    <string name="text_service_running">焦距App服务运行中</string>
+    <string name="text_server_token">Token</string>
+</resources>

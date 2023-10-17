@@ -1,0 +1,10 @@
+server:
+  port: 9999
+
+focus:
+  tokens:
+    - ztion
+    - test
+  check-token: true
+  msg-expired-time: 10800
+
